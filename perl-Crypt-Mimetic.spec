@@ -9,7 +9,7 @@ Summary:	Crypt::Mimetic - crypt a file and mask it behind another file
 Summary(pl):	Crypt::Mimetic - szyfrowanie pliku i ukrywanie go w innym
 Name:		perl-Crypt-Mimetic
 Version:	0.02
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
