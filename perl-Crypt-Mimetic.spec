@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	Mimetic
+%define		pdir	Crypt
+%define		pnam	Mimetic
 Summary:	Crypt::Mimetic - crypt a file and mask it behind another file
 Summary(pl):	Crypt::Mimetic - szyfrowanie pliku i ukrywanie go w innym
 Name:		perl-Crypt-Mimetic
