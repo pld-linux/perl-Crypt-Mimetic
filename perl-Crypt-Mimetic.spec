@@ -8,7 +8,7 @@ Summary:	Crypt::Mimetic - Crypt a file and mask it behind another file
 Summary(pl):	Modu³ Crypt::Mimetic - szyfruj±cy plik i ukrywaj±cy go w innym
 Name:		perl-Crypt-Mimetic
 Version:	0.02
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,7 +17,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Error
 BuildRequires:	perl-Term-ReadKey
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
