@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Mimetic
 Summary:	Crypt::Mimetic - crypt a file and mask it behind another file
-Summary(pl.UTF-8):   Crypt::Mimetic - szyfrowanie pliku i ukrywanie go w innym
+Summary(pl.UTF-8):	Crypt::Mimetic - szyfrowanie pliku i ukrywanie go w innym
 Name:		perl-Crypt-Mimetic
 Version:	0.02
 Release:	3
