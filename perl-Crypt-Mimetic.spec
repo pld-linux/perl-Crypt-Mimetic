@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Crypt
 %define		pnam	Mimetic
+%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::Mimetic - crypt a file and mask it behind another file
 Summary(pl.UTF-8):	Crypt::Mimetic - szyfrowanie pliku i ukrywanie go w innym
 Name:		perl-Crypt-Mimetic
@@ -15,12 +15,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8c37e1950f944d1259c238c73af4e705
+URL:		http://search.cpan.org/dist/Crypt-Mimetic/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Error
 BuildRequires:	perl-Term-ReadKey
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -60,5 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/%{pdir}/*.pm
 %{perl_vendorlib}/%{pdir}/%{pnam}
 %{perl_vendorlib}/Error/*.pm
-%{_bindir}/*
+%attr(755,root,root) %{_bindir}/*
 %{_mandir}/man[13]/*
