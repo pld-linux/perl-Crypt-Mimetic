@@ -4,7 +4,6 @@
 
 %define		pdir	Crypt
 %define		pnam	Mimetic
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::Mimetic - crypt a file and mask it behind another file
 Summary(pl.UTF-8):	Crypt::Mimetic - szyfrowanie pliku i ukrywanie go w innym
 Name:		perl-Crypt-Mimetic
